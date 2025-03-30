@@ -1,0 +1,225 @@
+:root {
+    --rightcontainerbgcolor: #222222;
+    --bgcolor: #1c1c1c;
+    --textColor: #ccc;
+}
+
+[data-theme="light"] {
+    --bgcolor: #cbcbcb;
+    --rightcontainerbgcolor: #a1a1a1;
+    --textColor: #000;
+}
+
+body {
+    height:100%;
+    width:100%;
+    margin:0;
+    background-color:var(--bgcolor)
+}
+html {
+    overflow: hidden;
+    font-family: "inter", sans-serif;
+    width: 100%;
+    height: 100%;
+}
+.content {
+    height:auto;
+    width:100%;
+    display:flex;
+    height:auto;
+    justify-content: center;
+    gap:16px;
+    align-items: start;
+}
+.contentBottom {
+    height:auto;
+    width:100%;
+    display:flex;
+    height:auto;
+    justify-content: center;
+    align-items: start;
+}
+#contentBtmWrapper {
+    display:flex;
+    height:auto;
+    justify-content: center;
+    align-items: start;
+    background-color: var(--rightcontainerbgcolor);
+    width:min-content;
+    padding:1%;
+}
+#imagePuzzle {
+    aspect-ratio:7/6;
+    order:1;
+    height:min-content;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+}
+#imagePuzzle img {
+    border-radius:2px;
+    height: calc(var(--imageHeight) - 100px);
+    padding:30px;
+    padding-bottom:0;
+    width:min-content
+}
+#imagePuzzle h4 {
+    color:var(--textColor);
+    font-size: 2em;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+#container {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    gap: 64px;
+    margin-top:30px;
+}
+.rightContainer {
+    color:white;
+    gap:5px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+    height: var(--imageHeight);
+    background-color: var(--rightcontainerbgcolor);
+    border-radius: 8px;
+}
+.leftContainer {
+    gap:5px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+    height: calc(var(--imageHeight) - 100px);
+    background-color: var(--rightcontainerbgcolor);
+    border-radius: 8px;
+}
+#rightContainer button {
+    border: none;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+#play {
+    background-color:#d41c1c;
+    color:white;
+}
+#analysis {
+    background-color:rgb(16, 16, 16);
+    color:white;
+}
+#puzzles {
+    background-color: #d41c1c;
+    color:white;
+}
+#imageBoard {
+    aspect-ratio: 7/6;
+    height:var(--imageHeight);
+}
+#imageBoard img {
+    height:100%;
+    border-radius: 2px;
+}
+h1 {
+    margin:0;
+    font-size: 3em;
+    font-weight: 600;
+    display:flex;
+    justify-content: center;
+}
+p {
+    font-size:1.4em;
+    font-weight: 400;
+    margin: 5% 3%;
+}
+@media screen and (max-aspect-ratio: 1/1), (max-width: 900px) {
+    h1 {
+        font-size: 1.5em;
+    }
+    p {
+        font-size:1em;
+    }
+}
+#text {
+    color:var(--textColor)
+}
+button {
+    height:70px;
+    font-size: 2em;
+    border: none;
+    text-decoration: none;
+    padding:0;
+    margin:0;
+    border-radius: 10px;
+    width: 100%;
+}
+#puzzleContent {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto; /*constant*/
+    width: 100%;
+    gap: 20px;
+    justify-content: center;
+}
+
+#buttons {
+    width:min-content;
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+    margin: 0 10px;
+    width:70%;
+}
+@media screen and (max-aspect-ratio: 1/1) {
+    #imageBoard {
+        order:2;
+    }
+    #buttons {
+        width:60%;
+    }
+    #rightContainer {
+        order:1;
+    }
+    .content {
+        flex-direction: column;
+        align-items:center;
+        justify-content: flex-start;
+    }
+    .rightContainer {
+        height:auto;
+        width: var(--imageWidth)
+    }
+    .leftContainer {
+        height:auto;
+        width: var(--imageWidth)
+    }
+    #contentBtmWrapper {
+        flex-direction: column;
+    }
+    }
+#bigGuy {
+    gap: 50px 0;
+    
+}
+    
+
+
+
+
+footer  {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    background-color: var(--footerColor);
+    color:var(--textColor);
+}

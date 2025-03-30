@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4InARow.ai</title>
+    <link rel="icon" type="image/x-icon" href="images/circle-24.ico">
+    <link rel="stylesheet" href="navbar/styles.css">
+    <link rel="stylesheet" href="/normalize.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="theme/theme.css">    
+    <link rel="icon" type="image" href="images/circle-24.ico">
+</head>
+<body>
+    <main id="bigGuy">
+        <nav class="navbar">
+            <div class="left">
+                <a href="#">
+                    <img class="flex longLogo" src="navbar/svgNavbar/LogoBig.svg" alt="4InARow.ai">
+                    <img class="hidden shortLogo" src="navbar/svgNavbar/LogoSmall.svg" alt="4InARow.ai">
+                    <img class="hidden middleLogo" src="navbar/svgNavbar/LogoMiddle.svg" alt="4InARow.ai">
+                </a>
+                <a href="#">Puzzles</a>
+                <a href="analysis">Analysis</a>
+            </div>
+            <div class="right">
+                <a href="settings/">Settings</a>
+                <a href="../help/">Help</a>
+            </div>
+        </nav>
+        <div id="container">
+            <section class="content">
+                <div id="imageBoard">
+                    <img src="Images/image.png">
+                </div>
+                <div class="rightContainer">
+                    <div id="text">
+                        <h1>4InARow.ai</h1>
+                        <p>Play 4 In A Row and become a champion!</p>
+                    </div>
+                    <div id="buttons">
+                        <!--Buttons-->
+                        <button id="play" onclick="location.href = 'puzzles'">Play</button>
+                        <button id="analysis" onclick="location.href = 'analysis'">Analysis</button>
+                    </div>  
+                </div>
+            </section>
+            <section class="contentBottom">
+                <div id="contentBtmWrapper">
+                    <div id="imagePuzzle">
+                        <img src="Images/puzzle.png">
+                        <h4>Red to play, only one move to win</h3>
+                    </div>
+                    <div class="leftContainer">
+                        <div id="text">
+                            <h1>Solve Puzzles</h1>
+                            <p>With a variety of difficulties!</p>
+                        </div>
+                        <div id="buttons">
+                            <!--Buttons-->
+                            <button id="puzzles" onclick="location.href = 'puzzles'">puzzles</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <footer class="footer">
+            <p>© 2024 4InARow.ai</p>
+        </footer>
+    </main>
+    <script type="text/Javascript" src="navbar/index.js"></script>
+    <script type="text/Javascript" src="index.js"></script>
+    <script type="text/Javascript" src="theme/theme.js"></script>
+</body>
+</html>

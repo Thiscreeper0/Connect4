@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4InARow.ai</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../normalize.css">
+    <link rel="stylesheet" href="../navbar/styles.css">
+    <link rel="stylesheet" href="../theme/theme.css">
+</head>
+<body>
+    <main id="bigGuy">
+        <!--navbar-->
+        <nav class="navbar">
+            <div class="left">
+                <a href="../">
+                    <img class="flex longLogo" src="../navbar/svgNavbar/LogoBig.svg" alt="4InARow.ai">
+                    <img class="hidden shortLogo" src="../navbar/svgNavbar/LogoSmall.svg" alt="4InARow.ai">
+                    <img class="hidden middleLogo" src="../navbar/svgNavbar/LogoMiddle.svg" alt="4InARow.ai">
+                </a>
+                <a href="#">Puzzles</a>
+                <a href="../analysis">Analysis</a>
+            </div>
+            <div class="right">
+                <a href="../settings">Settings</a>
+                <a href="#">Help</a>
+            </div>
+        </nav>
+        <!--Help-->
+        <div id="container">
+            <section class="content">
+                <h1>Help</h1>
+                <p>This is the help page.</p>
+                <h3>1. How to play?</h3>
+                <h2>Setup</h2>
+        <p>The game is played on a 6x7 board, with 48 pieces divided into two different colors (red-black, red-yellow, and red-blue are popular).</p>
+
+        <h2>Gameplay</h2>
+        <p>Each player takes turns filling up the board with their pieces falling vertically. You can only place a piece in a column that isn't filled.</p>
+
+        <h2>Winning</h2>
+        <p>The game is won by the player that gets 4 pieces (discs/stones) in a row, horizontally, vertically, or diagonally.</p>
+
+        <h2>Draw</h2>
+        <p>If the board is filled and there is no winner, the game will be a draw.</p>
+
+        <h2>Time</h2>
+        <p>Original 4 In A Row doesn't have any time limits, but on <a href="http://4InARow.ai">4InARow.ai</a>, we have added time as a feature. There's starting time and bonus time. Starting time is the time the clock starts with, and bonus time is the time a player gets after finishing a move. Time is by default set to 1m, with 5s bonus.</p>
+
+        <h2>Rating</h2>
+        <p>The website uses a ranking system known as <a href="https://en.wikipedia.org/wiki/Glicko_rating_system">Glicko-2</a> to calculate the rating points for each player. This rating is used to determine the right player to play against in matches. You will play against someone with a similar rating as yourself, same as in chess</p>
+            
+            <div class="button-container">
+                <a href="signup.html">Get started!</a>
+            </div>
+            
+                </section>
+            </div>
+    </main>
+    <script type="text/Javascript" src="index.js"></script>
+    <script type="text/Javascript" src="../navbar/index.js"></script>
+    <script type="text/Javascript" src="../theme/theme.js"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="1080" height="540" viewBox="0 0 1080 540" xml:space="preserve">
+<desc>Created with Fabric.js 5.2.4</desc>
+<defs>
+</defs>
+<g transform="matrix(0 0 0 0 0 0)" id="c74eb9bf-78e9-4966-aa88-1a8cb73a5538"  >
+</g>
+<g transform="matrix(1 0 0 1 540 270)" id="7697cc74-f843-4145-9ad1-2c5ae0b3e866"  >
+<rect style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1; visibility: hidden;" vector-effect="non-scaling-stroke"  x="-540" y="-270" rx="0" ry="0" width="1080" height="540" />
+</g>
+<g transform="matrix(26.94 0 0 26.94 540 270)"  >
+<g style="" vector-effect="non-scaling-stroke"   >
+		<g transform="matrix(1 0 0 1 0.07 0)" id="svg_8"  >
+<rect style="stroke: rgb(51,51,51); stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(102,102,102); fill-rule: nonzero; opacity: 1;" vector-effect="non-scaling-stroke"  x="-11.14" y="-9.25" rx="0" ry="0" width="22.28" height="18.5" />
+</g>
+		<g transform="matrix(1 0 0 1 -11.04 -0.02)" id="svg_3"  >
+<ellipse style="stroke: rgb(51,51,51); stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(51,51,51); fill-rule: nonzero; opacity: 1;" vector-effect="non-scaling-stroke"  cx="0" cy="0" rx="8.91504" ry="9.1852" />
+</g>
+		<g transform="matrix(0.46 0 0 0.46 -10.95 0.25)" style="" id="svg_11"  >
+		<text xml:space="preserve" font-family="Noto Sans JP" font-size="24" font-style="normal" font-weight="bold" style="stroke: rgb(51,51,51); stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(76,76,76); fill-rule: nonzero; opacity: 1; white-space: pre;" ><tspan x="-9.8" y="7.54" >✖</tspan></text>
+</g>
+		<g transform="matrix(1 0 0 1 11.05 -0.02)" id="svg_12"  >
+<ellipse style="stroke: rgb(51,51,51); stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(102,102,102); fill-rule: nonzero; opacity: 1;" vector-effect="non-scaling-stroke"  cx="0" cy="0" rx="8.91504" ry="9.1852" />
+</g>
+</g>
+</g>
+</svg>

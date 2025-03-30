@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="play 4inarow online for free!">
+        <link rel="icon" type="image" href="../images/circle-24.ico">
+        <title>Connect 4</title>
+        <link rel="stylesheet" href="../normalize.css">
+        <link rel="stylesheet" href="../color.css">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="../navbar/styles.css">
+    </head>
+    <body>
+        <div class="hidden moveText-context-menu" >
+            <ul>
+                <li>
+                    <div id="deleteButtContext">Delete</div>
+                </li>
+                <li>
+                    <div id="branchButtContext">Copy branch to clipboard</div>
+                </li>
+            </ul>
+        </div>
+        <main id="bigGuy">
+            <!--navbar-->
+            <nav class="navbar">
+                <div class="left">
+                    <a href="../">
+                        <img class="flex longLogo" src="../navbar/svgNavbar/LogoBig.svg" alt="4InARow.ai">
+                        <img class="hidden shortLogo" src="/navbar/svgNavbar/LogoSmall.svg" alt="4InARow.ai">
+                        <img class="hidden middleLogo" src="/navbar/svgNavbar/LogoMiddle.svg" alt="4InARow.ai">
+                    </a>
+                    <a href="../puzzles">Puzzles</a>
+                    <a href="#">Analysis</a>
+                </div>
+                <div class="right">
+                    <a href="../settings">Settings</a>
+                    <a href="../help/">Help</a>
+                </div>
+            </nav>
+            <!--Board-->
+            <div class="MainWrapper">
+                <div class="Main">
+                    <div class="board">
+                        <div class="connect4">
+                            <div>
+                                <audio src="sound/soundEffectClick.wav" id="dropSound"></audio>
+                                <audio src="sound/soundEffectWin.wav" id="winSound"></audio>
+                                <div class="Container" id="Container">
+                                    <div class="canvasContainer">
+                                        <canvas class="canvas"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="solutionContainer" id="solutionContainer">
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <!--Side-bar-->
+                    <div id="side">
+                        <!--Text-->
+                        <div class="computerTop">
+                            <div id="switch">
+                                <img src="svg/off.svg" alt="noCheck" class="active">
+                            </div>
+                            <div id="computerTopText"></div>
+                            <div id="trash-Icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="#111" d="M9 3v1H4v2h1v13a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V6h1V4h-5V3zm0 5h2v9H9zm4 0h2v9h-2z"/></svg>
+                            </div>
+                        </div>
+                        <div id="textContainer">
+                            <div id="movesContainer" grid="yes">
+                                <div id="right-click-menu"></div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div id="customPosForm">
+                            <form autocomplete="off">
+                                <input type="text" id="inputField" pattern="[1-]" maxlength="48">
+                            </form>
+                    </div>
+                    <div id="buttons">
+                            <!--Buttons-->
+                            <div id="buttonsContainer">
+                                <button class="button" type="button" id="resetNumber" onclick="resetNumber()">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="m5.41 21l.71-4h-4l.35-2h4l1.06-6h-4l.35-2h4l.71-4h2l-.71 4h6l.71-4h2l-.71 4h4l-.35 2h-4l-1.06 6h4l-.35 2h-4l-.71 4h-2l.71-4h-6l-.71 4zM9.53 9l-1.06 6h6l1.06-6z"/></svg>
+                                </button>
+                                <button class="button" type="button" id="resetButt" onclick="resetGame()">
+                                    <img src="svg/Backward+.svg" alt="back+">
+                                </button>
+                                <button class="button" type="button" id="backButt" onclick="removePiece()">
+                                    <img src="svg/Backward.svg" alt="back">
+                                </button>
+                                <button class="button" type="button" id="customPosButt" onclick="autoPlayMoves()">
+                                    <svg class="line-md--pause-to-play-transition"xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                                        <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3">
+                                            <path d="M13 15L8 18L8 6L13 9L13 9" opacity="0" />
+                                            <path d="M13 9L18 12L18 12L13 15L13 15" opacity="0" />
+                                            <path d="M8 6L18 12L8 18z" />
+                                        </g>
+                                    </svg>
+                                    <svg style="display:none" class="line-md--play-to-pause-transition"xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                                        <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3">
+                                            <path d="M9 18L7 18L7 6L9 6L9 18" />
+                                            <path d="M15 6L17 6L17 18L15 18L15 6" />
+                                        </g>
+                                    </svg>
+                                </button>
+                                <button class="button" type="button" id="forwardButt" onclick="forward()">
+                                    <img src="svg/Forward.svg" alt="Forward">
+                                </button>
+                                <button class="button" type="button" id="forward+Butt" onclick="forwardPlus()">
+                                    <img src="svg/Forward+.svg" alt="Forward+">
+                                </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        
+        <!--Scripts-->
+        <div>
+            <script type="text/Javascript" src="index.js"></script>
+            <script type="text/Javascript" src="../navbar/index.js"></script>
+        </div>
+    </body>
+</html>

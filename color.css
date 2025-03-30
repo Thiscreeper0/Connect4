@@ -1,0 +1,64 @@
+:root {
+    --mainColor: #343434;
+    --bgColor: #1c1c1c;
+    --textBgColor: #262420;
+    --compTopBgColor: #383631;
+    --compTopBorderColor: #767676;
+    --inputFieldBgColor: #24221d;
+    --moveTextColor1: #878787;
+    --moveTextColor2: #7c7c7c;
+    --outlineColor: #767676;
+    --checkColorBlack: #151515;
+    --checkColorRed: #c61414;
+    --sideBgColor: transparent;
+    --blackText: rgb(186, 186, 186);
+    --redText: rgb(186, 186, 186);
+    --hoverBgColor: #358c8c;
+    --btnTextColor: #767676;
+    --borderActiveColor: #009940;
+    --offlineBgColor: #0b0b0b;
+    --offlineTextColor: #35c600;
+    --noPlayerBgColor: #ededea;
+    --player1BgColor: #dd0000;
+    --player2BgColor: #1c0f01;
+    --col1Row5TextColor: rgb(12, 12, 12);
+    --selectedOutlineColor: #ffaa00;
+    --winMoveBgColor: rgb(102, 255, 0);
+    --loseMoveBgColor: #ab0e0e;
+    --drawMoveBgColor: #0040ff;
+    --filledColBgColor: #232323;
+    --filledColTextColor: #232323;
+    --canvasContainerBgColor: var(--mainColor);
+    --solutionTextColor: #000000;
+    --selectedHoverOutlineColor: #07c2cf;
+    --canvasBgColor: #000000;
+    --solutionFoundBgColor : #00ffb3b3;
+}
+
+[data-theme="light"] {
+    --mainColor: rgb(70, 70, 70);
+    --bgColor: #efefef;
+    --textBgColor: #c6c6c6;
+    --compTopBgColor: #818181;
+    --compTopBorderColor: #d9d9d9;
+    --inputFieldBgColor: #3a3a3a;
+    --moveTextColor1: #000000;
+    --moveTextColor2: #000000;
+    --outlineColor: #d9d9d9;
+    --checkColorBlack: #000000;
+    --checkColorRed: #c61414;
+    --sideBgColor: transparent;
+    --blackText: #000000;
+    --redText: #000000;
+    --hoverBgColor: #d9d9d9;
+    --borderActiveColor: #16ce35;
+    --offlineBgColor: #f6f6f6;
+    --winMoveBgColor: rgb(102, 255, 0);
+    --loseMoveBgColor: #ab0e0e;
+    --drawMoveBgColor: #0040ff;
+    --filledColBgColor: #232323;
+    --filledColTextColor: #232323;
+    --solutionTextColor: #000000;
+    --solutionFoundBgColor : #00ffb3b3;
+
+}

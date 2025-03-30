@@ -1,0 +1,196 @@
+:root {
+    --background-color: #1c1c1c;
+    --sidebar-bg-color: #313131;
+    --border-color: #4b4b4b;
+    --text-color: rgb(0, 0, 0);
+    --theme-settings-bg-color: #313130;
+}
+
+body {
+    background-color: var(--background-color);
+    user-select: none;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    transition: background-color 0.1s, color 0.1s;
+}
+[data-theme="light"]{
+    --background-color: #efefef;
+    --text-color: #141414;
+    --border-color: #101010;
+    --sidebar-bg-color: #d9d9d9;
+    --theme-settings-bg-color: #d9d9d9;
+}
+#settings {
+    display: flex;
+    width: 100%;
+    flex: 1;
+    overflow-y: scroll;
+    height: 95%;
+}
+
+html {
+    overflow: hidden;
+    font-family: "inter", sans-serif;
+    width: 100%;
+    height: 100%;
+}
+
+.hidden {
+    display: none;
+}
+
+.flex {
+    display: flex;
+}
+
+.setting {
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+
+
+#sideSettings {
+    flex-direction: row;
+    align-items: center;
+    background-color: var(--sidebar-bg-color);
+    padding: 0.5%;
+    gap: 1%;
+    flex-wrap: wrap;
+    border: 2px solid var(--border-color);
+    border-radius: 5px;
+    margin-right: 50px;
+}
+
+#sideBarContainer {
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    justify-content: start;
+    margin: auto;
+    font-size: 2.7em;
+}
+
+@media screen and (max-width: 900px) and (max-aspect-ratio: 1/1) {
+    #sideBarContainer {
+        font-size: 2em;
+    }
+}
+
+@media screen and (max-width: 470px) and (max-aspect-ratio: 1/1) {
+    #sideBarContainer {
+        font-size: 1.3em;
+    }
+    #sideSettings {
+        margin-right: 20px;
+    }
+}
+
+#settings {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    grid-template-rows: 100%;
+    width: 100%;
+    height: 100%;
+}
+
+.setting1 {
+    display: flex;
+    color: var(--text-color);
+}
+
+#themeSettings {
+    background-color: var(--theme-settings-bg-color);
+    width: max-content;
+    padding: 5px 10px;
+    border: 2px solid var(--border-color);
+    border-radius: 5px;
+}
+
+.theme {
+    display: flex;
+    flex-direction: column;
+}
+
+#theme {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 15px;
+    width: auto;
+    height: 100px;
+}
+
+svg {
+    aspect-ratio: 1/1;
+    height: 100%;
+    width: 100%;
+}
+
+#themeContainer div {
+    height: max-content;
+}
+
+.themeText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.setting {
+    display: flex;
+    flex-direction: column;
+}
+
+.minus, .plus, .double, .number, .grid {
+    display: flex;
+    height: 50px;
+    aspect-ratio: 1/1;
+}
+
+#settingsContainer {
+    width: 100%;
+    height: 100%;
+}
+
+#sideSettings a {
+    width: fit-content;
+    text-align: center;
+}
+
+.number {
+    font-size: 2.3em;
+    width: auto;
+    margin: 0;
+    justify-content: center;
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+#generalSettings  div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 2px solid var(--border-color);
+    border-radius: 5px;
+    width:max-content;
+    padding:10px;
+}
+#generalSettings svg {
+    height:60px;
+}
+#settingsContainer svg {
+    color:var(--text-color)
+}
+.setting.on {
+    background-color: green;
+    color: white;
+}
+
+.setting.off {
+    background-color: red;
+    color: white;
+}
